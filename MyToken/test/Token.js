@@ -8,14 +8,14 @@ contract('Token', function(accounts) {
 			tokenInstance = instance;
 			return tokenInstance.name();
 		}).then(function(name){
-			assert.equal(name, 'My Token', 'is the correct name');
+			assert.equal(name, 'TestToken', 'is the correct name');
 			return tokenInstance.symbol();
 		}).then(function(symbol) {
-			assert.equal(symbol, "MT", "correct symbol");
+			assert.equal(symbol, "TT", "correct symbol");
 			return tokenInstance.version();
 
 		}).then(function(version){
-			assert.equal(version, "My Token version 1.0", "correct version");
+			assert.equal(version, "TestToken version 1.0", "correct version");
 		});
 	});
 

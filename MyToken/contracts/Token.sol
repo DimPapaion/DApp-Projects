@@ -1,9 +1,9 @@
 pragma solidity ^0.4.2;
 
 contract Token {
-    string public name = "My Token";
-    string public symbol = "MT";
-    string public version = "My Token version 1.0";
+    string public name = "TestToken";
+    string public symbol = "TT";
+    string public version = "TestToken version 1.0";
 
 	uint256 public totalSupply;
 
@@ -70,4 +70,7 @@ contract Token {
 	}
 		
 
-}// cd DApp-Projects/MyToken
+}
+
+// cd DApp-Projects/MyToken
+//Token.deployed().then(function(instance){ tokenInstance = instance; })
