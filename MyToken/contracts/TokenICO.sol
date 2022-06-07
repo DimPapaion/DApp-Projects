@@ -52,8 +52,8 @@ contract TokenICO{
 		// transfer remaining tokens to admin
 		require(tokenContract.transfer(admin, tokenContract.balanceOf(this)));
 
-		//destroy contract
-		selfdestruct(admin);
+
+		admin.transfer(address(this).balance);
 
 	}
 }

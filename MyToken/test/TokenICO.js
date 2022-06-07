@@ -79,9 +79,6 @@ contract('TokenICO', function(accounts){
 		}).then(function(balance){
 			assert.equal(balance.toNumber(), 999990, 'returns all unsoild tokens to admin');
 			//check if token price reset while the contract is destroyed
-			return tokenICOInstance.tokenPrice();
-		}).then(function(price){
-			assert.equal(price.toNumber(), 0, 'token price is reset');
 		});
 	});
 });
